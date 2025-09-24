@@ -1,0 +1,1 @@
+//Pure Function: A pure function is a specific kind of value-producing function that not only has no side effects but also doesn’t rely on side effects from other code—for example, it doesn’t read global bindings whose value might change. A call to such a function can be substituted by its return value without changing the meaning of the code.
