@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Teddy</h1>
+        <p>A tiny programming language to help us understand code parsing & interpretation</p>
+        <hr>
+    </header>
+
+    <section class="playground">
+        <h2>Playground</h2>
+        <div class="editor-container">
+            <div class="editor-section">
+                <label for="input">Teddy Code</label>
+                <textarea id="input" placeholder="Enter your TEDDY code here...
+Example:
+suppose x -> 5;
+suppose y -> 10;
+print(x + y);"></textarea>
+            </div>
+            <div class="editor-section">
+                <label for="output">Output</label>
+                <textarea id="output" readonly placeholder="Output will appear here..."></textarea>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="getTokens">See Tokens</button>
+            <button id="getAST">See Abstract Syntax Tree</button>
+            <button id="getJS">Translate to JS</button>
+            <button id="runTeddy">Run Teddy Code</button>
+        </div>
+        <p>NOTE: You can also view output in its proper form in the console (press fn+f12)</p>
+    </section>
+
+    <section class="tutorial">
+        <h2>Introduction</h2>
+        <p>Teddy is a tiny programming language I built to understand how parsing and interpretation work behind the scenes. It is inspired from Chapter 12, <a href="http://eloquentjavascript.net" target="_blank" rel="noopener noreferrer">Eloquent JS</a>, Marijn Haverbeke; & <a href="https://youtu.be/rTuTLc_u6qw" target="_blank" rel="noopener noreferrer">Piyush Garg</a> on YouTube.</p>
+        <p>The syntax of Teddy is designed to drive home a few key principles about the nature of programming. For instance, the assignment operator is not "=", but rather an arrow "->", which signals that bindings/variables actually point at values — not "contain" them. Also, vocabulary like "suppose" or "print" is a bit easier on the mind that "let" or "console.log".</p>
+
+        <h3>What is Teddy?</h3>
+        <p>Teddy is a humble program that demonstrates the fundamental concepts of:</p>
+        <ul>
+            <li><strong>Lexical Analysis:</strong> We can break source code into tokens.</li>
+            <li><strong>Parsing:</strong> We can build an Abstract Syntax Tree (AST) from these tokens.</li>
+            <li><strong>Translation:</strong> We can convert this AST to JavaScript code.</li>
+            <li><strong>Interpretation:</strong> We can also execute this JS code.</li>
+        </ul>
+
+        <h3>Basic Syntax</h3>
+        <p>This is how you write Teddy Code:</p>
+        <ul>
+            <li>Declaring Variables: <code>suppose x -> 5;</code></li>
+            <li>Arithmetic Operations: <code>x + y</code>, <code>x - y</code>, <code>x * y</code>, <code>x / y</code>
+            </li>
+            <li>Printing Values: <code>print(x);</code></li>
+            <li>Writing Comments: <code>//This is a comment</code></li>
+        </ul>
+        
+        <h3>Laws of this Language:</h3>
+        <p>There are two types of 'values' in Teddy: Primitive & Non-Primitive.</p>
+        <p>Primitives are:</p>
+        <ul>
+            <li><b>Numbers:</b> Integers. For instance: 10;</li>
+            <li><b>Strings:</b> Characters between two double-quote characters. For example: "str";</li>
+            <li><b>Template Literals:</b> Characters between two backtick characters. For example: `str ${expression}`;</li>
+        </ul>
+        <p>Non-Primitives are:</p>
+        <ul>
+            <li><b>Arrays:</b> An ordered collection of values. For example: [1,2,3];</li>
+            <li><b>Objects:</b> An unordered collection of key-value pairs. For instance: {name: "john", age: 21};</li>
+        </ul>
+        <p>A few keywords to know about the language:</p>
+        <ul>
+            <li><b>suppose:</b> Signals that a binding/variable is about to be declared</li>
+            <li><b>if, elseIf, else:</b> Control-flow statements that run code only when their conditions are true.</li>
+            <li><b>function:</b> Signals that a function is being declared & defined.</li>
+        </ul>
+        <p>Some basic operators in language:</p>
+        <ul>
+            <li><b>Assignment:</b> -></li>
+            <li><b>Arithmetic:</b> +, -, *, /, %</li>
+            <li><b>Logical:</b> =, <, >, ==, !=, !==</li>
+        </ul>
+        <p>Some basic functions in language:</p>
+        <ul>
+            <li><b>print():</b> The 'console.log()' in JS.</li>
+            <li>All other JS functions are supported. Think of JS as a reliable proto language behind this one.</li>
+        </ul>
+        <p><b>NOTE:</b> As of now, some bad code would produce syntax-errors, & some would be ignored. This should get better as the language gets mature over time.</p>
+
+        <div class="learn-more">
+            <p><strong>Want to build your own programming language?</strong> Check out my YouTube video where I
+                explain the entire process step-by-step: <a href="https://youtube.com/@boringmishu" target="_blank"
+                    rel="noopener noreferrer">Watch the Tutorial</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by <a href="https://worldofmishu.in" target="_blank" rel="noopener noreferrer">WorldOfMishu</a></p>
+    </footer>
+</body>
+</html>

@@ -68,4 +68,4 @@ function Promise_all(promises)
     Promise_all([soon(1), soon(2), soon(3)]).then(array => console.log("This should be [1, 2, 3]:", array));
 //c)
     Promise_all([soon(1), Promise.reject("X"), soon(3)]).then(array => console.log("We should not get here"))
-    .catch(error => console.log("Unexpected failure:", error));
+    .catch(error => console.log("Unexpected failure:", error));``
