@@ -1,0 +1,31 @@
+/* The following are some important ways to access elements in CSS: */
+
+    /* element */
+    p{
+        background-color: black;
+    }
+
+    /* class */
+    .className{
+        color: black;
+    }
+
+    /* ID */
+    #idName{
+        display: block;
+    }
+
+    /* p elements with main as ID, & a & b as classes */
+    p#main.a.b{
+        display: flex;
+    }
+
+    /* all a inside .class */
+    .class a{
+        text-align: left;
+    }
+
+    /* all a that are direct children of #id */
+    #id > a{
+        text-decoration: none;
+    }

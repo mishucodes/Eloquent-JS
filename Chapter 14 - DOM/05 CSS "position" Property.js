@@ -1,0 +1,6 @@
+//The "position" property of the element can have the following values:
+    //a) Static: This is the default value. The elements sits where it is supposed to be sitting.
+    //b) Relative: The element still sits where it is supposed to be sitting, but we can move it using 'top' & 'left' properties of the element. The element will move relative to its normal sitting position.
+    //c) Absolute: The element is removed from the normal document flow. It no longer takes up space and may overlap with other elements. Its 'top' & 'left' properties can be used to absolutely position it relative to the upper-left corner of the nearest enclosing element whose position property isn’t 'static', or relative to the document if no such enclosing element exists.
+    //d) Sticky: The element behaves like a normal element until you scroll past a certain point. After that, it sticks to the viewport until its parent ends.
+    //e) Fixed: The element is removed from normal flow and stays stuck to the viewport permanently. Scrolling doesn’t move it at all.

@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+}
+#heavenlyBodies{
+    /* border: 1px solid gray; */
+    height: 75vh;
+    padding: 50px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+#heavenlyBodies img{
+    /* border: 1px solid white; */
+    height: 100px;
+    width: 100px;
+    position: relative;
+}

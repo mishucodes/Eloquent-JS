@@ -1,0 +1,3 @@
+//This is a very important function to create great animations in websites:
+    requestAnimationFrame(fn);
+    //EXPLANATION: This takes a function definition as its argument & then it executes it with current time as the argument passed to this function. The good thing is that requestAnimationFrame() is scheduled to run whenever the browser is ready to refresh the DOM, so it's very smooth. Also, if the user is on some other tab, the function does not run (saving resources).
