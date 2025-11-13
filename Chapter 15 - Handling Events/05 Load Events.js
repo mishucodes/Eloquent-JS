@@ -1,0 +1,5 @@
+//01. load: When a page finishes loading, the "load" event fires on the window and the document body objects. This is often used to schedule initialization actions that require the whole document to have been built.
+    //NOTE: Elements such as images and script tags that load an external file also have a "load" event that indicates the files they reference were loaded. Like the focus-related events, loading events do not propagate.
+
+//02. beforeunload: When you close page or navigate away from it (for example, by following a link), a "beforeunload" event fires. The main use of this event is to prevent the user from accidentally losing work by closing a document. If you prevent the default behavior on this event and set the 'returnValue' property on the event object to a string, the browser will show the user a dialog asking if they really want to leave the page.
+    //NOTE: That dialogue might include your string, but because some malicious sites try to use these dialogues to confuse people into staying on their page, most browsers no longer display them.
