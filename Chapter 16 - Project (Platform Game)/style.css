@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+:root {
+  --bgc: hsl(205, 97%, 59%);
+  --lava: hsl(0, 100%, 70%);
+  --wall: hsl(0, 0%, 100%);
+  --coin: hsl(55, 85%, 65%);
+  --player: hsl(0, 0%, 25%);
+  --playerLost: hsl(0, 44%, 44%);
+  --playerWonShadowEffect: -4px -7px 8px hsl(0, 0%, 100%), 4px -7px 8px hsl(0, 0%, 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--bgc);
+  font-family: "Science Gothic", sans-serif;
+}
+
+header{
+  /* border: 1px solid black; */
+  position: absolute;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  z-index: 1;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1{
+  font-size: 2.5rem;
+}
+header button{
+  background-color: transparent;
+  border: none;
+}
+header img{
+  height: 2.5rem;
+}
+
+
+
+#settingsModal{
+  border: 5px solid black;
+  border-radius: 1rem;
+  background-color: var(--playerLost);
+  height: 60vh;
+  width: 60vw;
+  overflow: scroll;
+  margin: 20vh 20vw;
+  padding: 2rem;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.invisible{
+  display: none !important;
+}
+#settingsHeader{
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#settingsHeader h2{
+  font-size: 2rem;
+}
+#settingsHeader button{
+  background-color: transparent;
+  border: none;
+}
+#settingsHeader img{
+  height: 2rem;
+}
+#settingsList{
+  font-size: 1.5rem;
+}
+#settingsList li{
+  display: flex;
+}
+#settingsList li button{
+  font-family: "Science Gothic", sans-serif;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+#settingsList li button:hover{
+  text-decoration: line-through var(--lava) 0.25rem;
+}
+#settingsList li button.disabled{
+  text-decoration: line-through var(--lava) 0.25rem;
+}
+
+
+#aboutAuthor{
+  font-size: 1.2rem;
+}
+#aboutAuthor a{
+  color: black;
+}
+
+
+.game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.background {
+  table-layout: fixed;
+  border-spacing: 0;
+}
+.background td {
+    padding: 0;
+}
+.lava {
+    background: var(--lava);
+}
+.wall {
+    background: var(--wall);
+}
+.actor  { 
+  position: absolute;
+}
+.coin {
+  background: var(--coin);
+}
+.player {
+  background: var(--player);
+}
+.lost .player{
+  background: var(--playerLost);
+}
+.won .player {
+  box-shadow: var(--playerWonShadowEffect);
+}

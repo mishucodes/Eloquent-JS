@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgc: hsl(220, 60%, 10%);
+    --lava: hsl(0, 100%, 30%);
+    --wall: hsl(0, 0%, 25%);
+    --coin: hsl(55, 85%, 40%);
+    --player: hsl(0, 0%, 75%);
+    --playerLost: hsl(0, 44%, 44%);
+    --playerWonShadowEffect: -4px -7px 8px hsl(0, 0%, 100%), 4px -7px 8px hsl(0, 0%, 100%);
+  }
+}

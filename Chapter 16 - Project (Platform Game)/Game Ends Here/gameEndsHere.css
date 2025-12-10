@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+:root {
+  --bgc: hsl(205, 97%, 59%);
+  --textColor: hsl(0, 0%, 0%);
+  --textColorForLinks: hsl(0, 0%, 25%);
+}
+
+
+body{
+    height: 100vh;
+    background-color: var(--bgc);
+    color: var(--textColor);
+    font-family: "Science Gothic", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 1000;
+}
+p {
+    font-size: 1.5rem;
+}
+
+a{
+    color: var(--textColorForLinks);
+}
