@@ -47,6 +47,7 @@ import * as UIFunctions from "./JS Files/06-UI-Helper-Functions.js"
     let settingsButton = document.querySelector("header button");
     let closeSettingsButton = document.querySelector("#settingsHeader button");
     let musicSettingButton = document.querySelector("#settingsList li button");
+    let loadingScreen = document.querySelector("#loadingScreen");
     settingsButton.onclick = UIFunctions.showAndHideSettings;
     closeSettingsButton.onclick = UIFunctions.showAndHideSettings;
     musicSettingButton.onclick = () => 
@@ -60,3 +61,4 @@ import * as UIFunctions from "./JS Files/06-UI-Helper-Functions.js"
     UIFunctions.turnBGM(true);
     window.addEventListener("blur", () => UIFunctions.turnBGM(false));
     window.addEventListener("focus", () => UIFunctions.turnBGM(true));
+    window.addEventListener("DOMContentLoaded", () => loadingScreen.classList.add("invisible"))

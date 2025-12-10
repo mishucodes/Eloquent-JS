@@ -18,6 +18,9 @@ body{
   background-color: var(--bgc);
   font-family: "Science Gothic", sans-serif;
 }
+.invisible{
+  display: none !important;
+}
 
 header{
   /* border: 1px solid black; */
@@ -43,6 +46,14 @@ header img{
   height: 2.5rem;
 }
 
+#loadingScreen{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
 
 
 #settingsModal{
@@ -59,9 +70,6 @@ header img{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.invisible{
-  display: none !important;
 }
 #settingsHeader{
   margin-bottom: 2rem;
