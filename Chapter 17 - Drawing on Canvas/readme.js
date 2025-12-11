@@ -1,0 +1,1 @@
+//I’m skipping this chapter for now. I’ll return to it later in my career, once graphics and canvas work become relevant. At this stage, time is limited and my priority is mastering the core foundations of full-stack development.
