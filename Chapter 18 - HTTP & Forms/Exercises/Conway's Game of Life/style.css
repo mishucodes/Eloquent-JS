@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
 :root{
-    /* Soft pastel Life palette */
-    --bgc: hsl(0, 0%, 46%);           /* neutral canvas */
-    --alive: hsl(120, 50%, 60%);      /* soft mint green */
-    --dead: hsl(0, 50%, 62%);         /* soft blush red */
+    --bgc: hsl(0, 50%, 62%);
+    --alive: hsl(120, 50%, 60%);
+    --dead: hsl(0, 50%, 52%);
     --textColor: hsl(220, 20%, 88%);
 }
 
@@ -20,7 +19,6 @@ body{
 }
 
 h1{
-    /* border: 1px solid black; */
     padding-left: 1rem;
 }
 
@@ -33,4 +31,7 @@ td.alive{
 }
 td.dead{
     background-color: var(--dead);
+}
+p{
+    display: none;
 }

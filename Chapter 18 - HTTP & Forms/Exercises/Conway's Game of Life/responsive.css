@@ -1,0 +1,13 @@
+@media (max-width: 768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    td{
+        height: 5px;
+        width: 10px;
+    }
+    p{
+        display: block;
+        text-align: center;
+    }
+}

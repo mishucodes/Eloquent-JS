@@ -1,3 +1,4 @@
+
 //GLOBAL VARIABLES:
 let height = 41, width = 71;
 let gridElement = document.querySelector("#grid");
@@ -10,6 +11,11 @@ window.addEventListener("keydown", (e) =>
                 nextGeneration();
         }            
     });
+gridElement.addEventListener("touchstart", (e) =>
+    {
+        e.preventDefault();
+        nextGeneration();
+    }, {passive: false});
 
 //Initialising Program with a Random Grid:
 fillGrid(getRandomGrid(height, width));
