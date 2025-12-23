@@ -1,0 +1,9 @@
+@media (prefers-color-scheme: dark){
+    :root{
+        /* Soft pastel Life palette */
+        --bgc: hsl(0, 0%, 36%);           /* neutral canvas */
+        --alive: hsl(120, 45%, 40%);      /* soft mint green */
+        --dead: hsl(0, 45%, 32%);         /* soft blush red */
+        --textColor: hsl(220, 20%, 88%);
+    }
+}

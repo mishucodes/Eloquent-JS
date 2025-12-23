@@ -1,0 +1,2 @@
+//01. Checkbox: This field is a binary toggle. Its value can be extracted or changed through its "checked" property, which holds a Boolean value.
+//02. Radio Buttons: A radio button is similar to a checkbox, but it’s implicitly linked to other radio buttons with the same "name" attribute so that only one of them can be active at any time.

@@ -1,0 +1,4 @@
+//SOME IMPORTANT POINTS ABOUT THE TEXT FIELDS:
+    //a) value: Fields created by <textarea> tags, or <input> tags with a type of "text" or "password", share a common interface. Their DOM elements have a "value" property that holds their current content as a string value.
+    //b) selectionStart & selectionEnd: The selectionStart and selectionEnd properties of text fields give us information about the cursor and selection in the text. When nothing is selected, these two properties hold the same number, indicating the position of the cursor.
+    //c) input & change: Whenever anything is changed in a text-field, the "input" event fires up. However, a "change" event is fired when the text-field loses focus & something is changed.
