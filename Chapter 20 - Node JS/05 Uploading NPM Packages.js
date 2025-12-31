@@ -1,0 +1,2 @@
+//The "npm" command is also used to publish new packages or new versions of packages.
+//If you run "npm publish" in a directory that has a "package.json" file, it will publish a package with the name and version listed in the JSON file to the registry.
