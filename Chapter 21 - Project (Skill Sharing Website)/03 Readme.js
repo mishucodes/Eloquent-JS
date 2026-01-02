@@ -1,0 +1,1 @@
+//I read the whole chapter & understood the pith of it. I'll use these lessons in my projects later on, but since I'm in a hurry right now, I'm skipping the exercises of this one. I'll come back to it when I read this book again.
