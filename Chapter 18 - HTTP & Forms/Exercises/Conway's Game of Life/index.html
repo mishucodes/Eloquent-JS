@@ -10,8 +10,39 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Conway's Game of Life</h1>
+    <header>
+        <h1>Conway's Game of Life</h1>
+        <div id="info">
+            <button><img src="./Media/infoIconWhite.png" alt="infoIcon"></button>
+        </div>
+    </header>
+    <div id="modal" class="invisible">
+        <div id="modalHeadAndBody">
+            <div id="modalHead">
+                <h2>About this Game:</h2>
+                <button><img src="./Media/crossIconWhite.png" alt="crossIcon"></button>
+            </div>
+            <div id="modalBody">
+                <p>This project is a humble attempt at building "Conway's Game of Life".</p>
+                <p>It's also called a "zero-player game".</p>
+                <br>
+                <p>The game plays itself:</p>
+                <p>Just press "Enter" / "Space", or just tap the screen.</p>
+                <br>
+                <p>Each cell lives or dies based on a few simple rules:</p>
+                <ol>
+                    <li>Overpopulation leads to death.</li>
+                    <li>Isolation causes decay</li>
+                    <li>A delicate balance allows survival or birth</li>
+                </ol>
+                <br>
+                <p>From these rules emerge patterns that loosely mirror ideas of life, evolution, and eventual stability—until everything finally settles into stillness.</p>
+            </div>
+        </div>
+        <div id="modalFooter">
+            <p>Visit <a href="https://worldofmishu.in/" target="_blank">WorldOfMishu</a> for more fun games.</p>
+        </div>
+    </div>
     <table id="grid"></table>
-    <p>Try Landscape on Phone for a better Experience.</p>
 </body>
 </html>

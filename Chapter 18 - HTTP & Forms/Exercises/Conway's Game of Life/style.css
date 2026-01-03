@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
 :root{
     --bgc: hsl(0, 50%, 62%);
+    --border: hsl(220, 20%, 88%);
     --alive: hsl(120, 50%, 60%);
     --dead: hsl(0, 50%, 52%);
     --textColor: hsl(220, 20%, 88%);
+    --pixelSize: 12px;
 }
 
 *{
@@ -16,22 +18,107 @@ body{
     background-color: var(--bgc);
     color: var(--textColor);
     font-family: "Science Gothic", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.invisible{
+    display: none !important;
 }
 
-h1{
+
+
+
+/* HEADER */
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+header h1{
+    font-size: 2rem;
+}
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem;
+    cursor: pointer;
+}
+#info button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info img{
+    height: 2.5rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+
+/* MODAL */
+#modal{
+    border: 3px solid var(--border);
+    border-radius: 1rem;
+    position: absolute;
+    min-height: 75vh;
+    min-width: 75vw;
+    padding: 1rem;
+    background-color: var(--bgc);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#modalHead{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#modalHead button{
+    border: none;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#modalHead img{
+    height: 2.5rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#modalBody ol{
     padding-left: 1rem;
+    list-style-position: inside;
+}
+#modalFooter a{
+    color: var(--textColor);
 }
 
+
+
+/* TABLE */
+table {
+  border-collapse: collapse;
+}
 td{
-    height: 1rem;
-    width: 1rem;
+    height: var(--pixelSize);
+    width: var(--pixelSize);
+    border: 1px solid var(--bgc);
 }
 td.alive{
     background-color: var(--alive);
 }
 td.dead{
     background-color: var(--dead);
-}
-p{
-    display: none;
 }

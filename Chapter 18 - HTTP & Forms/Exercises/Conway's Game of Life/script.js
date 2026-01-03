@@ -1,24 +1,35 @@
-
 //GLOBAL VARIABLES:
-let height = 41, width = 71;
+let PIXEL_SIZE = 12;
+let height = Math.floor((window.innerHeight - document.querySelector("h1").offsetHeight) / PIXEL_SIZE);
+let width = Math.floor(window.screen.width / PIXEL_SIZE);
 let gridElement = document.querySelector("#grid");
-window.addEventListener("keydown", (e) => 
-    {
-        switch(e.key)
-        {
-            case "Enter":
-            case " ": //space
-                nextGeneration();
-        }            
-    });
-gridElement.addEventListener("touchstart", (e) =>
-    {
-        e.preventDefault();
-        nextGeneration();
-    }, {passive: false});
+let infoButton = document.querySelector("#info");
+let modalElement = document.querySelector("#modal");
+let modalCloseButton = document.querySelector("#modalHead button");
 
+
+//The Program:
+    window.addEventListener("keydown", (e) => 
+        {
+            switch(e.key)
+            {
+                case "Enter":
+                case " ": //space
+                    nextGeneration();
+                case "Escape":
+                    toggleModalDisplay();
+            }            
+        });
+    gridElement.addEventListener("touchstart", (e) =>
+        {
+            e.preventDefault();
+            nextGeneration();
+        }, {passive: false});
+//Enabling/Disabling Modal Display:
+    infoButton.onclick = toggleModalDisplay;
+    modalCloseButton.onclick = toggleModalDisplay;
 //Initialising Program with a Random Grid:
-fillGrid(getRandomGrid(height, width));
+    fillGrid(getRandomGrid(height, width));
 
 
 
@@ -90,4 +101,10 @@ fillGrid(getRandomGrid(height, width));
                 }
             }
             return numberOfAliveNeighbours;
+        }
+    //04: Toggling Modal Display:
+        function toggleModalDisplay(event)
+        {
+            event?.preventDefault();
+            modalElement.classList.toggle("invisible");
         }
