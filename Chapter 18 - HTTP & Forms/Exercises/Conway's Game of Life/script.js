@@ -16,6 +16,7 @@ let modalCloseButton = document.querySelector("#modalHead button");
                 case "Enter":
                 case " ": //space
                     nextGeneration();
+                    break;
                 case "Escape":
                     toggleModalDisplay();
             }            
